@@ -1,0 +1,35 @@
+.inputContainer {
+    margin-bottom: 1rem;
+
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+    justify-content: flex-start;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  

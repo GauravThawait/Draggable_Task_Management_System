@@ -1,0 +1,60 @@
+.taskCard {
+    position: relative;
+    background-color: #ffffff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0; /* Light gray border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%;
+  }
+  
+  .taskCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Elevated shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .dragging {
+    opacity: 0.6; /* Reduce opacity while dragging */
+    background-color: #f0f4ff; /* Highlight during drag */
+  }
+  
+  .taskTitle {
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    color: #1a202c; /* Dark gray */
+    margin-bottom: 8px;
+  }
+  
+  .taskDescription {
+    text-align: left;
+    font-size: 0.875rem; /* 14px */
+    color: #4a5568; /* Medium gray */
+  }
+  
+  /* Date and Time */
+  .taskDate {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 0.75rem; /* 12px */
+    color: #718096; /* Gray */
+  }
+  
+  /* Delete Icon */
+  .deleteIcon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #e53e3e; /* Red */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .deleteIcon:hover {
+    color: #c53030; /* Darker red */
+    transform: scale(1.2);
+  }
+  
