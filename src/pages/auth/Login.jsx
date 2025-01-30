@@ -25,7 +25,7 @@ const Login = () => {
 
     try {
       const response = await api.post("/api/v1/user/signin", formData);
-
+      console.log("backend url :", process.env.REACT_APP_BASE_URL)
       if (response.data) {
         console.log(response.data)
         store_token(response.data.data.token);
